@@ -1,8 +1,12 @@
 === Genesis Sample Theme with Sass ===
 
-Github project link: https://github.com/gregrickaby/Genesis-Sass
+Just the Genesis Sample Theme built using Sass
 
-Demo link: http://genesis.gregrickaby.com
+=== Changelog ===
+
+0.1 - 2013.02.24
+
+- Initial release
 
 
 === Installation Instructions ===
@@ -18,3 +22,5 @@ Demo link: http://genesis.gregrickaby.com
 Name: Greg Rickaby
 Website: http://gregrickaby.com
 Twitter: http://twitter.com/gregrickaby
+Github project link: https://github.com/gregrickaby/Genesis-Sass
+Demo link: http://genesis.gregrickaby.com
