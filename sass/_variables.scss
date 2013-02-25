@@ -11,7 +11,7 @@ $grayDark:              #333 !default;
 $gray:                  #636363 !default;
 $grayLight:             #999 !default;
 $grayLighter:           #eee !default;
-$whiteSmoke:			#f5f5f5 !default;
+$whiteSmoke:            #f5f5f5 !default;
 $white:                 #fff !default;
 
 
@@ -29,18 +29,18 @@ $purple:                #7a43b6 !default;
 
 // Structure
 // -------------------------
-$ContentWidth:			752 !default; // The width of your content box (640, 752, 1152, etc...)
+$ContentWidth:          752 !default; // The width of your content box (640, 752, 1152, etc...)
 $bodyBackground:        $white !default;
-$baseFontSize:			16 !default; // After setting html {font-size: 100%;} in _reset.scss
-$baseMargin:			24 !default; // Spacing is calculated using either 24px or 48px to maintain vertical rhythm
+$baseFontSize:          16 !default; // After setting html {font-size: 100%;} in _reset.scss
+$baseMargin:            24 !default; // Spacing is calculated using either 24px or 48px to maintain vertical rhythm
 
 
 // Typography
 // -------------------------
 $textColor:             $grayDark !default;
-$googleFont: 			Lato, Open Sans !default; // Can use multiple fonts with a comma. Lato, Open Sans, etc...
-$googleFontWeight:		400 !default; // 400 or 700
-$googleFontType:		sans-serif !default; // This should be sans or sans-serif
+$googleFont:            Lato, Open Sans !default; // Can use multiple fonts with a comma. Lato, Open Sans, etc...
+$googleFontWeight:      400 !default; // 400 or 700
+$googleFontType:        sans-serif !default; // This should be sans or sans-serif
 $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;

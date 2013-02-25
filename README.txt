@@ -1,8 +1,16 @@
 === Genesis Sample Theme with Sass ===
 
-Just the Genesis Sample Theme built using Sass
+Just the Genesis Sample Theme built using Sass and the Golden Ratio
+
+Demo link: http://genesis.gregrickaby.com
 
 === Changelog ===
+
+0.2 - 2013.02.25
+
+- Fixed missing Google Font import
+- Fixed code indentation
+- Fixed inconsistant $ContentWidth capitalization
 
 0.1 - 2013.02.24
 
@@ -23,4 +31,3 @@ Name: Greg Rickaby
 Website: http://gregrickaby.com
 Twitter: http://twitter.com/gregrickaby
 Github project link: https://github.com/gregrickaby/Genesis-Sass
-Demo link: http://genesis.gregrickaby.com

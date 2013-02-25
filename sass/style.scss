@@ -1,3 +1,9 @@
+// Core variables and mixins
+@import "variables"; // Modify this for custom colors, font-sizes, etc
+@import "mixins"; // Modify this for custom functions and actions etc
+@import "golden-ratio"; // Golden Ratio Typography
+@import "google-web-font"; // Google Web Fonts
+
 /*
     Theme Name: Genesis Sample
     Description: This is the sample theme created for the Genesis Framework.
@@ -52,15 +58,10 @@
 
 */
 
-// Core variables and mixins
-@import "variables"; // Modify this for custom colors, font-sizes, etc
-@import "mixins"; // Modify this for custom functions and actions etc
-@import "golden-ratio"; // Golden Ratio Typography
-
 /*
 01 Import Fonts
 ---------------------------------------------------------------------------------------------------- */
-@import "google-web-font";
+@include importGoogleFont((Lato),(400));
 
 /*
 02 Defaults
