@@ -1,0 +1,183 @@
+//
+// Typography
+// --------------------------------------------------
+
+/* 03a - Font Color ----------- */
+
+a:hover,
+body,
+h2 a,
+h2 a:visited,
+h4.widgettitle a,
+input,
+.author,
+.date,
+.genesis-nav-menu a,
+.genesis-nav-menu li li a,
+.genesis-nav-menu li li a:link,
+.genesis-nav-menu li li a:visited,
+.post-comments,
+#title a,
+#title a:hover {
+	color: $grayDarker;
+}
+
+a,
+h2 a:hover,
+.genesis-nav-menu li a:hover,
+.genesis-nav-menu li:hover a,
+.genesis-nav-menu li li a:hover,
+.genesis-nav-menu .current-menu-item a {
+	color: $red;
+}
+
+.post-info,
+.post-meta,
+#description {
+	color: $gray;
+}
+
+blockquote::before,
+blockquote p,
+input,
+select,
+textarea {
+	color: $grayLight;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+.btn,
+.genesis-nav-menu .highlight-menu-item a,
+.genesis-nav-menu .highlight-menu-item a:hover,
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+	color: $white;
+}
+
+/* 03b - Font Family ----------- */
+
+body,
+input,
+textarea,
+.author-box h1 {
+	font-family: $baseFontFamily
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.entry-title a,
+#title {
+	@include googleFont('Lato',sans-serif,400);
+}
+
+/* 03c - Font Size ----------- */
+
+#title {
+	font-size: 42px;
+	@include rem(font-size, 42);
+}
+
+h1,
+.entry-title,
+.entry-title a {
+	@include grHeadlineSize();
+}
+
+blockquote::before {
+	font-size: 32px;
+	@include rem(font-size, 32);
+	@include grCustomLineHeight(32);
+}
+
+h2 {
+	@include grSubHeadlineSize();
+}
+
+h3 {
+	font-size: 24px;
+	@include rem(font-size, 24);
+	@include grCustomLineHeight(24);
+}
+
+h4,
+.archive-title,
+.taxonomy-description h1,
+.widgettitle {
+	font-size: 20px;
+	@include rem(font-size, 20);
+	@include grCustomLineHeight(20);
+}
+
+h5 {
+	@include grFontSize();
+}
+
+h6,
+.author-box h1,
+.sidebar h2 a {
+	@include grSecondaryText();
+}
+
+input,
+select,
+textarea,
+.genesis-nav-menu,
+.post-info,
+.post-meta,
+.wp-caption,
+#footer p {
+	@include grFontSize();
+}
+
+
+/* 03d - Font Miscellaneous ----------- */
+
+blockquote p {
+	font-style: italic;
+}
+
+cite {
+	font-style: normal;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+.entry-title a,
+.genesis-nav-menu,
+.post-comments,
+.post-info .author,
+.post-info .date,
+.wp-caption,
+#footer p,
+#title {
+	font-weight: 700;
+}
+
+.wp-caption {
+	text-align: center;
+}
+
+h2 a,
+h2 a:visited,
+.genesis-nav-menu a,
+.navigation li a,
+.widgettitle a,
+#title a {
+	text-decoration: none;
+}

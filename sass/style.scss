@@ -1,0 +1,128 @@
+/*
+    Theme Name: Genesis Sample
+    Description: This is the sample theme created for the Genesis Framework.
+    Author: StudioPress
+    Author URI: http://www.studiopress.com/
+ 
+    Version: 1.9
+ 
+    Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+ 
+    Template: genesis
+    Template Version: 1.9
+ 
+    License: GPL-2.0+
+    License URI: http://www.opensource.org/licenses/gpl-license.php 
+*/
+
+
+/* Table of Contents
+
+    01 Import Fonts
+    02 Defaults
+    03 Typography
+        - Font Color
+        - Font Family
+        - Font Size
+        - Font Miscellaneous
+    04 Layout
+        - Structure
+        - 1152px CSS Grid
+        - Header
+        - Main Content
+        - Post Info & Meta
+        - Column Classes
+        - Miscellaneous
+    05 Menus
+        - Primary Navigation Extras
+    06 Headings
+    07 Lists
+    08 Post Navigation
+    09 Comments
+    10 Sidebars
+    11 Footer
+        - Footer Widgets
+    12 Forms & Buttons
+        - Gravity Forms
+    13 Images & Captions
+    14 Media Queries
+        - max-width: 1024px
+        - max-width: 768px
+        - max-width: 480px
+
+*/
+
+// Core variables and mixins
+@import "variables"; // Modify this for custom colors, font-sizes, etc
+@import "mixins"; // Modify this for custom functions and actions etc
+@import "golden-ratio"; // Golden Ratio Typography
+
+/*
+01 Import Fonts
+---------------------------------------------------------------------------------------------------- */
+@import "google-web-font";
+
+/*
+02 Defaults
+---------------------------------------------------------------------------------------------------- */
+@import "defaults";
+
+/*
+03 Typography
+------------------------------------------------------------------------------------------------------- */
+@import "typography";
+
+/*
+04 Layout
+---------------------------------------------------------------------------------------------------- */
+@import "layout";
+
+/*
+05 Menus
+---------------------------------------------------------------------------------------------------- */
+@import "menus";
+
+/*
+06 Headings
+---------------------------------------------------------------------------------------------------- */
+@import "headings";
+
+/*
+07 Lists
+---------------------------------------------------------------------------------------------------- */
+@import "lists";
+
+/*
+08 Post Navigation
+---------------------------------------------------------------------------------------------------- */
+@import "post-navigation";
+
+/*
+09 Comments
+---------------------------------------------------------------------------------------------------- */
+@import "comments";
+
+/*
+10 Sidebars
+---------------------------------------------------------------------------------------------------- */
+@import "sidebars";
+
+/*
+11 Footer
+---------------------------------------------------------------------------------------------------- */
+@import "footer";
+
+/*
+12 Forms & Buttons
+---------------------------------------------------------------------------------------------------- */
+@import "forms-buttons";
+
+/*
+13 Images & Captions
+---------------------------------------------------------------------------------------------------- */
+@import "images-captions";
+
+/*
+14 Media Queries
+---------------------------------------------------------------------------------------------------- */
+@import "media-queries";

@@ -1,0 +1,33 @@
+//
+// Lists
+// --------------------------------------------------
+
+.entry-content ol,
+.entry-content ul {
+	margin-bottom: 26px;
+	@include rem(margin-bottom, 26);
+}
+
+.entry-content ol li,
+.entry-content ul li {
+	line-height: 1.625;
+}
+
+.entry-content ol li,
+.entry-content ul li {
+	margin-left: 40px;
+	@include rem(margin-left, 40);
+}
+
+.entry-content ol li {
+	list-style-type: decimal;
+}
+
+.entry-content ul li {
+	list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}

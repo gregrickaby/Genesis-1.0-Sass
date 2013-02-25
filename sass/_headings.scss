@@ -1,0 +1,29 @@
+//
+// Headings
+// --------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.entry-title a {
+	line-height: 1.2;
+	margin-bottom: 16px;
+	@include rem(margin-bottom, 16);
+}
+
+.author-box h1 {
+	margin: 0
+}
+
+.taxonomy-description h1 {
+	margin-bottom: 4px;
+	@include rem(margin-bottom, 4);
+}
+
+.archive-title {
+	margin-bottom: 24px;
+	@include rem(margin-bottom, 24);
+}

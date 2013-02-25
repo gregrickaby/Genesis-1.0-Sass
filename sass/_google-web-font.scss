@@ -1,0 +1,79 @@
+//
+// Google Web Fonts
+// --------------------------------------------------
+
+
+// Import Google Web Font
+//
+// Generate the @import feature.
+//
+// @author Greg Rickaby
+// @since 1.0
+//
+// Usage: @include importGoogleFont((Lato),(400));
+// ----------------------------------
+@mixin importGoogleFont($fonts, $variants: ()) {
+  $url: "//fonts.googleapis.com/css?family=";
+  $i: 0;
+  
+  // Add the family argument to the URL string.
+  // We can assume that the user will always specify at least one font.
+  @each $font in $fonts {
+    $i: $i + 1;
+  
+    // Add the name of the font.
+    $j: 0;
+    @each $word in $font {
+      $j: $j + 1;
+      $url: $url + $word;
+      
+      // Add a plus symbol between words.
+      @if $j < length($font) {
+        $url: $url + "+";
+      }
+    }
+    
+    // If there is/are font variant(s) for this font, add them.
+    @if $j <= length($variants) {
+      $url: $url + ':';
+    
+      $k: 0;
+      @each $variant in nth($variants, $j) {
+        $k: $k + 1;
+        
+        $url: $url + $variant;
+        
+        // Add a comma between variants.
+        // For some reason length($variant) doesn't work. Weird!
+        @if ($k < length(nth($variants, $j))) {
+          $url: $url + ',';
+        }
+      }
+    }
+    
+    // Add a pipe between words.
+    // It would seem that a pipe isn't a valid URL character in its unescaped form,
+    // but Google reccommend using it anyway.
+    @if $i < length($fonts) {
+      $url: $url + "|";
+    }
+  }
+  
+  // Finally!
+  @import url(#{$url});
+}
+
+
+// Write Google Web Font
+//
+// This will write the Google web font into a .scss
+//
+// @author Greg Rickaby
+// @since 1.0
+//
+// Usage: @include googleFont("Lato", sans-serif, 400);
+// ----------------------------------
+@mixin googleFont($gfont, $gvariant, $gweight) {
+  font-family: $gfont, $gvariant;
+  font-weight: $gweight;
+}

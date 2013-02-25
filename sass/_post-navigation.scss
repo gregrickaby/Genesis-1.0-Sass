@@ -1,0 +1,23 @@
+//
+// Post Navigation
+// --------------------------------------------------
+
+.navigation li {
+	display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+	background-color: $grayDarker;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 12px;
+	@include rem(padding, 12);
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+	background-color: $red;
+}

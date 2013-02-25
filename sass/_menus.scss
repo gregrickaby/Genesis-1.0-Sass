@@ -1,0 +1,135 @@
+//
+// Menus
+// --------------------------------------------------
+
+.genesis-nav-menu {
+	clear: both;
+	overflow: hidden;
+}
+
+#header .genesis-nav-menu {
+	float: right;
+	margin-top: 48px;
+	@include rem(margin-top, 48);
+	width: auto;
+}
+
+.genesis-nav-menu.menu-primary,
+.genesis-nav-menu.menu-secondary {
+	border-bottom: 1px solid #ccc;
+}
+
+.genesis-nav-menu ul {
+	float: left;
+	width: 100%;
+}
+
+.genesis-nav-menu li {
+	display: inline-block;
+	float: left;
+	list-style-type: none;
+	text-align: left;
+}
+
+.genesis-nav-menu a {
+	display: block;
+	padding: 24px 20px;
+	padding: cr(24) cr(20);
+	position: relative;
+}
+
+.genesis-nav-menu li.highlight-menu-item {
+	margin-left: 20px;
+	@include rem(margin-left, 20);
+}
+
+.genesis-nav-menu .highlight-menu-item a {
+	background-color: $grayDarker;
+}
+
+.genesis-nav-menu .highlight-menu-item a:hover {
+	background-color: $red;
+}
+
+.genesis-nav-menu li li a,
+.genesis-nav-menu li li a:link,
+.genesis-nav-menu li li a:visited {
+	background-color: $white;
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 20px;
+	@include rem(padding, 20);
+	position: relative;
+	width: 170px;
+}
+
+.genesis-nav-menu li ul {
+	left: -9999px;
+	position: absolute;
+	width: 212px;
+	z-index: 99;
+}
+
+.genesis-nav-menu li ul ul {
+	margin: -55px 0 0 211px;
+}
+
+.genesis-nav-menu li:hover ul ul,
+.genesis-nav-menu li.sfHover ul ul {
+	left: -9999px;
+}
+
+.genesis-nav-menu li:hover,
+.genesis-nav-menu li.sfHover {
+	position: static;
+}
+
+ul.genesis-nav-menu li:hover>ul,
+ul.genesis-nav-menu li.sfHover ul,
+#header .genesis-nav-menu li:hover>ul,
+#header .genesis-nav-menu li.sfHover ul {
+	left: auto;
+}
+
+.genesis-nav-menu li a .sf-sub-indicator,
+.genesis-nav-menu li li a .sf-sub-indicator,
+.genesis-nav-menu li li li a .sf-sub-indicator {
+	position: absolute;
+	text-indent: -9999px;
+}
+
+#wpadminbar li:hover ul ul {
+	left: 0;
+}
+
+/* 05a - Primary Navigation Extras ----------- */
+
+.genesis-nav-menu li.right {
+	float: right;
+	padding: 24px 20px;
+	padding: cr(24) cr(20);
+}
+
+.genesis-nav-menu li.right a {
+	display: inline;
+	padding: 0;
+}
+
+.genesis-nav-menu li.search {
+	padding: 6px 0 0;
+	padding: cr(6) 0 0;
+}
+
+.genesis-nav-menu li.rss a {
+	background: url(images/rss.png) no-repeat center left;
+	margin-left: 20px;
+	@include rem(margin-left, 20);
+	padding-left: 20px;
+	@include rem(padding-left, 20);
+}
+
+.genesis-nav-menu li.twitter a {
+	background: url(images/twitter-nav.png) no-repeat center left;
+	padding-left: 24px;
+	@include rem(padding-left, 24);
+}

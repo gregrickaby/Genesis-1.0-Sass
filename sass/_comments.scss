@@ -1,0 +1,76 @@
+//
+// Comments
+// --------------------------------------------------
+
+#comments,
+#respond {
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+.ping-list,
+#comments {
+	margin-bottom: 48px;
+	@include rem(margin-bottom, 48);
+}
+
+#author,
+#email,
+#url {
+	width: 50%;
+}
+
+.commentmetadata,
+#author,
+#email,
+#url {
+	margin-bottom: 12px;
+	@include rem(margin-bottom, 12);
+}
+
+#comment {
+	margin: 12px 0;
+	margin: cr(12) 0;
+}
+
+label {
+	margin-left: 12px;
+	@include rem(margin-left, 12);
+}
+
+.comment-list li,
+.ping-list li {
+	list-style-type: none;
+	margin-top: 24px;
+	@include rem(margin-top, 24);
+	padding: 32px;
+	@include rem(padding, 32);
+}
+
+.comment-list li ul li {
+	margin-right: -32px;
+	@include rem(margin-right, 32);
+}
+
+.comment-header {
+	overflow: hidden;
+}
+
+.comment {
+	background-color: $whiteSmoke;
+	border: 2px solid $white;
+	border-right: none;
+}
+
+.comment-content p {
+	margin-bottom: 24px;
+	@include rem(margin-bottom, 24);
+}
+
+.bypostauthor {
+}
+
+#comments .navigation {
+	margin-top: 32px;
+	@include rem(margin-top, 32);
+}

@@ -1,0 +1,56 @@
+//
+// Footer
+// --------------------------------------------------
+
+#footer {
+	clear: both;
+}
+
+#footer .wrap {
+	border-top: 2px solid $grayDarker;
+	overflow: hidden;
+	padding: 48px 0;
+	padding: cr(48) 0;
+}
+
+#footer .creds {
+	text-align: right;
+}
+
+#footer .creds,
+#footer .gototop {
+	margin: 8px 0;
+	margin: cr(8) 0;
+}
+
+/* 11a - Footer Widgets ----------- */
+
+.footer-widgets {
+	border-top: 2px solid $grayDarker;
+	clear: both;
+	line-height: 1.5;
+	overflow: hidden;
+	padding: 32px 0 16px;
+	padding: cr(32) 0 cr(16);
+}
+
+.footer-widgets p {
+	margin-bottom: 16px;
+	@include rem(margin-bottom, 16);
+}
+
+.footer-widgets .widget {
+	margin-bottom: 24px;
+	@include rem(margin-bottom, 24);
+}
+
+.footer-widgets .widget-area ul li {
+	list-style-type: none;
+	margin-bottom: 6px;
+	@include rem(margin-bottom, 6);
+	word-wrap: break-word;
+}
+
+.footer-widgets-1 {
+	margin-right: percentage(48px / 1152px); /* 48px / 1152px */
+}
