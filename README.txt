@@ -11,7 +11,8 @@ Demo link: http://genesis.gregrickaby.com
 - Fixed missing Google Font import
 - Fixed code indentation
 - Fixed inconsistant $ContentWidth capitalization
-- Fixed body background-color to $bodyBackground
+- Changed body background-color to $bodyBackground
+- Changed default text to $textColor
 
 0.1 - 2013.02.24
 
