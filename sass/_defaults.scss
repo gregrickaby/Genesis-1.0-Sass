@@ -27,7 +27,7 @@ html {
 }
 
 body {
-	background-color: $white;
+	background-color: $bodyBackground;
 	@include grBaseLineHeight();
 }
 
