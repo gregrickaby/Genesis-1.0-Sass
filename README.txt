@@ -10,7 +10,7 @@ Demo link: http://genesis.gregrickaby.com
 
 - Fixed missing Google Font import
 - Fixed code indentation
-- Fixed inconsistant $ContentWidth capitalization
+- Fixed inconsistant $contentWidth capitalization
 - Changed body background-color to $bodyBackground
 - Changed default text to $textColor
 

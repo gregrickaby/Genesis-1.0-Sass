@@ -6,7 +6,7 @@
 // Golden Ratio Math
 //
 // Let's do some math so we can build beautiful typography and vertical rhythm.
-// For any magic to happen, set the $ContentWidth variable on _variables.scss
+// For any magic to happen, set the $contentWidth variable on _variables.scss
 // to match your content box width (normally this is 640px, 740px, etc...).
 //
 // Many thanks to Chris Pearson's scary math skills http://t.co/KoeUoEWrNS
@@ -14,17 +14,17 @@
 //
 // @author Greg Rickaby
 // @since 1.0
-// @requires $ContentWidth
+// @requires $contentWidth
 // ----------------------------------
 $phi: (1 + sqrt(5)) / 2; // 1.61803398874989 or "The Golden Ratio"
 $xoo: 1 / (2 * $phi);
-$yoo: sqrt($ContentWidth) / $phi; // Line-height
-$zoo: $phi - $xoo * (1 - ($ContentWidth / $yoo));
+$yoo: sqrt($contentWidth) / $phi; // Line-height
+$zoo: $phi - $xoo * (1 - ($contentWidth / $yoo));
 
 
 // Title Size
 //
-// Calculated title size based on $ContentWidth.
+// Calculated title size based on $contentWidth.
 //
 // @author Greg Rickaby
 // @since 1.0
@@ -45,7 +45,7 @@ $zoo: $phi - $xoo * (1 - ($ContentWidth / $yoo));
 
 // Headline Size
 //
-// Calculated headline size based on $ContentWidth.
+// Calculated headline size based on $contentWidth.
 //
 // @author Greg Rickaby
 // @since 1.0
@@ -66,7 +66,7 @@ $zoo: $phi - $xoo * (1 - ($ContentWidth / $yoo));
 
 // Sub-headline Size
 //
-// Caclulated sub-headline size based on $ContentWidth.
+// Caclulated sub-headline size based on $contentWidth.
 //
 // @author Greg Rickaby
 // @since 1.0
@@ -87,7 +87,7 @@ $zoo: $phi - $xoo * (1 - ($ContentWidth / $yoo));
 
 // Font Size
 //
-// Calculated font size based on $ContentWidth.
+// Calculated font size based on $contentWidth.
 //
 // @author Greg Rickaby
 // @since 1.0
@@ -95,7 +95,7 @@ $zoo: $phi - $xoo * (1 - ($ContentWidth / $yoo));
 // Usage: @include grFontSize();
 // --------------------------------
 @function calcFontSize() {
-  $foo: sqrt($ContentWidth) / $phi;
+  $foo: sqrt($contentWidth) / $phi;
     @return round($foo);
 }
 
@@ -108,7 +108,7 @@ $zoo: $phi - $xoo * (1 - ($ContentWidth / $yoo));
 
 // Secondary Text
 //
-// Calculated secondary text size based on $ContentWidth.
+// Calculated secondary text size based on $contentWidth.
 //
 // @author Greg Rickaby
 // @since 1.0
@@ -129,7 +129,7 @@ $zoo: $phi - $xoo * (1 - ($ContentWidth / $yoo));
 
 // Default Line Height
 //
-// Calculate default line-height based on $ContentWidth.
+// Calculate default line-height based on $contentWidth.
 //
 // @author Greg Rickaby
 // @since 1.0
@@ -137,8 +137,8 @@ $zoo: $phi - $xoo * (1 - ($ContentWidth / $yoo));
 // Usage: @include grBaseLineHeight();
 // --------------------------------
 @function calcBaseLineHeight() {
-  $foobar: sqrt($ContentWidth) / $phi;
-  $foo: calcFontSize() * ($phi - $xoo * (1 - ($ContentWidth / pow(calcFontSize() * $phi, 2))));
+  $foobar: sqrt($contentWidth) / $phi;
+  $foo: calcFontSize() * ($phi - $xoo * (1 - ($contentWidth / pow(calcFontSize() * $phi, 2))));
   $fo: $foo / $foobar;
     @return $fo;
 }
@@ -159,7 +159,7 @@ $zoo: $phi - $xoo * (1 - ($ContentWidth / $yoo));
 // Usage: @include grCustomLineHeight(26);
 // --------------------------------
 @function calcCustomLineHeight($target) {
-  $foobar: sqrt($ContentWidth) / $phi;
+  $foobar: sqrt($contentWidth) / $phi;
   $foo: $target / $foobar;
     @return $foo;
 }

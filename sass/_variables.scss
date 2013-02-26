@@ -22,7 +22,7 @@ $red:                   #ff2a00 !default;
 
 // Structure
 // -------------------------
-$ContentWidth:          752 !default; // The width of your content box (640, 752, 1152, etc...)
+$contentWidth:          752 !default; // The width of your content box (640, 752, 1152, etc...)
 $bodyBackground:        $white !default;
 $baseFontSize:          17 !default; // After setting html {font-size: 100%;} in _reset.scss
 $baseMargin:            24 !default; // Spacing is calculated using either 24px or 48px to maintain vertical rhythm
