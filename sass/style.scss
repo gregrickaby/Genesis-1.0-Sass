@@ -61,7 +61,7 @@
 /*
 01 Import Fonts
 ---------------------------------------------------------------------------------------------------- */
-@include importGoogleFont((Lato),(400));
+@include web-font((Lato), (Normal), (latin), (), ());
 
 /*
 02 Defaults

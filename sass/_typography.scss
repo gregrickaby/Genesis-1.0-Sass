@@ -75,7 +75,8 @@ h5,
 h6,
 .entry-title a,
 #title {
-	@include googleFont('Lato',sans-serif,400);
+	font-family: $googleFont, $googleFontType;
+	font-weight: $googleFontWeight;
 }
 
 /* 03c - Font Size ----------- */
