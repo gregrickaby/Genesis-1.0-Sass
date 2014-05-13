@@ -1,8 +1,8 @@
 === Genesis Sample Theme with Sass ===
 
-Just the Genesis Sample Theme built using Sass and the Golden Ratio
+THIS IS OUTDATED! DO NOT USE UNLESS YOU'RE PROJECT IS RUNNING GENESIS 1.0+
 
-Demo link: http://genesis.gregrickaby.com
+USE my fork of the Genesis Sample Theme instead: https://github.com/gregrickaby/genesis-sample/tree/sass
 
 === Changelog ===
 
