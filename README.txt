@@ -1,6 +1,6 @@
 === Genesis Sample Theme with Sass ===
 
-THIS IS OUTDATED! DO NOT USE UNLESS YOU'RE PROJECT IS RUNNING GENESIS 1.0+
+THIS IS OUTDATED! DO NOT USE UNLESS YOUR PROJECT IS RUNNING GENESIS 1.0+
 
 USE my fork of the Genesis Sample Theme instead: https://github.com/gregrickaby/genesis-sample/tree/sass
 
